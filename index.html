@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Score Keeper</title>
-</head>
-<body>
+  </head>
+  <body>
     
+    <div class="container">
+      <div class="score-board">
+        <div class="winner-display">
+          <p class="p-text">Playing to: <span class="score-num">7</span></p>
+          <input type="number" id="" placeholder="7" />
+        </div>
+        <hr id="first" />
+
+        <div class="score">
+          <button id="p1-btn">Player One</button>
+          <h1>
+            <span class="p1-display">0</span> --
+            <span class="p2-display"> 0</span>
+          </h1>
+          <button id="p2-btn">Player Two</button>
+        </div>
+        <hr id="second" />
+        <div class="reset">
+          <button id="reset-btn">Reset</button>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
