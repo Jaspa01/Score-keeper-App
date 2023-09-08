@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    to left,
+    #021d2d,
+    #052132,
+    #083a57,
+    #084365,
+    #116291
+  );
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-board {
+  background-color: #161616;
+  border-radius: 5%;
+  padding: 2rem;
+  width: 420px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.winner-display {
+  background-color: #040404ca;
+  color: #fff;
+  min-width: 420px;
+  padding: 1.5rem;
+  position: relative;
+  position: absolute;
+  top: 0;
+  border-radius: 15px 15px 0px 0px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.winner-display input {
+  width: 13%;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  margin: 5px;
+  padding: 3px 2px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #040404ca;
+  border: 1px solid #149cea;
+  border-radius: 3px 3px 0 0;
+  border-bottom: none;
+  text-align: center;
+}
+
+.winner-display p {
+  font-size: 25px;
+  font-weight: 600;
+  color: #149cea;
+  font-family: monospace;
+  font-weight: 300;
+}
+
+#first {
+  width: 100%;
+  position: absolute;
+  top: 6.5rem;
+}
+
+#second {
+  width: 100%;
+  position: absolute;
+  bottom: 6rem;
+}
+
+.score {
+  width: 370px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+h1 {
+  color: #fff;
+}
+
+h1 .p1-display,
+.p2-display {
+  color: #149cea;
+}
+
+.reset {
+  margin-top: 30px;
+}
+
+button {
+  width: 7em;
+  position: relative;
+  height: 3.5em;
+  border: 3px ridge #149cea;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.7s;
+  border-radius: 0.3em;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 30%;
+  background-color: #161616;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+button::before {
+  content: "";
+  transform: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #161616;
+}
+
+button::before,
+button::after {
+  transform: scale(1.2);
+}
+
+button:hover {
+  box-shadow: inset 0px 0px 25px #1479ea;
+}
+
+.winner {
+  color: #d21717;
+}
